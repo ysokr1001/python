@@ -4,14 +4,17 @@
 # s = int(input("첫번째 숫자"))
 # s1 = int(input("두번째 숫자"))
 # user = input("연산자")
+
 # num = {"+":s+s1 , "-":s-s1 , "*":s*s1 , "/":s/s1}
-# if user not in num:
-#     print('잘못된 연산자입니다')
-# elif (user == '/' and s1 == 0):
+
+# if (s1 == 0 and user == '/'  ):
 #     print("0으로 나눌 수 없습니다")
 # else:
-#     print(num[user],"입니다")
-# 왜! 이게!!! elif 조건이 안되는데!!!!왜1!!!!!
+#     if user not in num:
+#         print('잘못된 연산자입니다')
+#     else:
+#         print(num[user],"입니다")
+# #TODO 왜! 이게!!! elif 조건이 안되는데!!!!왜1!!!!!
 
 # for i in reversed(range(0, 10)):
 #     print("love you", i)
@@ -25,7 +28,7 @@
 #     e = e + 1
 # for i in range(s,e,g):
 #     print(i)
-# if조건이 안됨
+# # if조건이 안됨
 
 # s = int(input("시작"))
 # e = int(input("끝"))
@@ -50,9 +53,9 @@
 #     t = t + i
 # print(t)
 
-s = int(input("숫자"))
-t = 0
-while s > 0:
-    t += s
-    s -= 1
-print(t)
+# s = int(input("숫자"))
+# t = 0
+# while s > 0:
+#     t += s
+#     s -= 1
+# print(t)
