@@ -341,8 +341,8 @@
 # print( )
 
 # 과제 제출 1
-# for i in range(5):
-#     print('-'*(i*-1+5)+'*' * (i*2+1))
+for i in range(5):
+    print('-'*(i*-1+5)+'*' * (i*2+1))
 
 # 과제 제출 2
 for i in range(5):
