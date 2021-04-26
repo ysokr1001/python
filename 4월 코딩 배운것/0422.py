@@ -63,6 +63,12 @@
 # m = map(int, x)
 # a, b = m
 
+# a = input().split()
+# print(a)
+
+# b = map(int, input().split())
+# print(list(b))
+
 # print(m)
 # print(type(x))
 # print(type(m))
@@ -90,6 +96,39 @@
 
 # a = (i for i in range(10) if i % 2 == 0)
 # print(a)
+
+# a = ['alpha', 'bravo', 'charlire', 'delta',
+#      'echo', 'foxtrot', 'golf', 'hotel', 'india']
+# b = []
+# for i in a:
+#     if len(i) == 5:
+#         b.append(i)
+# print(b)
+
+# a, b = map(int, input().split())
+# li = []
+# for i in range(a, b+1):
+#     if 2**i:
+#         z = 2**i
+#         li.append(z)
+#         i += 1
+# del li[1]
+# del li[-2]
+# print(li)
+
+# import random
+
+# for i in range(10):
+#     lotto = []
+#     while len(lotto) < 7:
+#         ran = random.randint(1, 51)
+#         if ran not in lotto:
+#             lotto.append(ran)
+#     print(lotto)
+
+# for i in range(10):
+#     lotto = random.sample(range(1, 50), 7)
+#     print(lotto)
 
 # a = (1.2, 2.5, 3.7, 4.6)
 # a = tuple(map(int, a))
@@ -248,6 +287,23 @@
 #     a.append(line)
 # print(a)
 
+a = [[1, 2, 3], [5, 6, 7], [8, 9, 10], [12, 13, 14]]
+
+# i = 0
+# for i in range(len(a)):
+#     j = 0
+#     for j in range(len(a[i])):
+#         print(a[i][j], end=' ')
+#     print()
+
+i = 0
+while i < len(a):
+    j = 0
+    while j < len(a[i]):
+        print(a[i][j], end=' ')
+        j += 1
+    print()
+    i += 1
 # from time import sleep
 # for i in range(100):
 #     msg = '\r 진행률%d%%'%(i+1)
@@ -255,19 +311,19 @@
 #     print(msg,end='')
 #     sleep(0.1)
 
-def add_number(n1, n2):
-    ret = n1 + n2
-    return ret
+# def add_number(n1, n2):
+#     ret = n1 + n2
+#     return ret
 
 
-ans = add_number(10, 15)
-print(ans)
+# ans = add_number(10, 15)
+# print(ans)
 
 
-def add_txt(t1, t2):
-    print(t1, t2)
+# def add_txt(t1, t2):
+#     print(t1, t2)
 
 
-text1 = '대한민국~'
-text2 = '만세'
-add_txt(text1, text2)
+# text1 = '대한민국~'
+# text2 = '만세'
+# add_txt(text1, text2)
