@@ -90,3 +90,111 @@
 #     print()
 
 # for 반복문으로 2차원리스트 만들기
+
+# 함수만들기
+# def hello():
+#     print("hello! world!!")
+
+
+# for i in range(10):
+#     hello()
+
+# 값을 받아 계산하는 함수계산기
+# def hello(a, b):
+#     return a+b, a-b, a*b, a/b
+
+
+# a, b = map(int, input().split())
+# z, v, n, m = hello(a, b)
+
+# print("+= %.2f -= %.2f *=%.2f /=%.2f" % (z, v, n, m))
+
+# 함수를 이용하여 몫과 나머지가 출력되게 하세요
+# x = 10
+# y = 3
+
+
+# def get_quotient_remainder(x, y):
+#     return x//y, x % y
+
+
+# quotient, remainder = get_quotient_remainder(x, y)
+# print('몫: {0}, 나머지: {1}'.format(quotient, remainder))
+
+# 숫자를 입력받아 연산자 실행
+
+# x, y = map(int, input().split())
+
+
+# def calc(x, y):
+#     return x + y, x-y, x*y, x/y
+
+
+# a, s, m, d = calc(x, y)
+# print('덧셈:{0} 뺄셈:{1} 곱셈:{2} 나눗셈{3}'.format(a, s, m, d))
+
+# 아래의 식을 람다식으로
+# def plus(x):
+#     return x + 10
+
+
+# print(plus(1))
+
+# a = (lambda x: x+10)
+# print(type(a))
+# print(a(1))
+
+# 람다는 변수에 입력하지 않고도 바로 출력할 수 있음
+# print((lambda x: x+10)(1))
+
+# 람다표현식을 인수로 사용하기
+# def plus(x):
+#     return x + 10
+
+
+# print(list(map(plus, [1, 2, 3])))
+
+# print(list(map(lambda x: x + 10, [1, 2, 3])))
+
+# 리스트에서 3의 배수들만 출력
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(list(map(lambda x: str(x) if x % 3 == 0 else x, a)))
+
+# 5-10사이의 수만 출력
+# print(list(filter(lambda x: x > 5 and x < 10, a)))
+
+# 전역변수 지역변수 1
+# def a():
+#     x = 10
+#     y = 100
+
+#     def b():
+#         # nonlocal x
+#         x = 20
+
+#         def c():
+#             nonlocal x
+#             nonlocal y
+#             x = x + 30
+#             y = y + 300
+#             print(x)
+#             print(y)
+#         c()
+#     b()
+
+
+# a()
+
+def a():
+    x = 10
+
+    def b():
+        nonlocal x
+        x = 20
+        # print(x)
+    b()
+
+    print(x)
+
+
+a()

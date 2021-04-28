@@ -116,15 +116,15 @@
 # del li[-2]
 # print(li)
 
-# import random
+import random
 
-# for i in range(10):
-#     lotto = []
-#     while len(lotto) < 7:
-#         ran = random.randint(1, 51)
-#         if ran not in lotto:
-#             lotto.append(ran)
-#     print(lotto)
+for i in range(10):
+    lotto = []
+    while len(lotto) < 7:
+        ran = random.randint(1, 51)
+        if ran not in lotto:
+            lotto.append(ran)
+    print(lotto)
 
 # for i in range(10):
 #     lotto = random.sample(range(1, 50), 7)
